@@ -33,7 +33,7 @@ _start:
 	# Read syscall
 	mov rdi, 4
 	mov rsi, rsp
-	mov rdx, 155
+	mov rdx, 256
 	mov rax, 0x00
 	syscall
 
@@ -79,7 +79,7 @@ done2:
 	mov r12, rax
 
 	# Close syscall
-	mov rdi, 4
+	mov rdi, 5
 	mov rax, 0x03
 	syscall
 
@@ -98,7 +98,7 @@ done2:
 	syscall
 
 	# Close syscall
-	mov rdi, 5
+	mov rdi, 4
 	mov rax, 0x03
 	syscall
 
